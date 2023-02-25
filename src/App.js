@@ -1,23 +1,33 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import LandingPage from './pages/web/LandingPage';
+import { routing } from './configurations/Local/LocalValue';
+import AboutPage from './pages/web/AboutPage';
+import ServicePage from './pages/web/ServicePage';
+import BlogPage from './pages/web/BlogPage';
+import SingleBlog from './pages/web/SingleBlog';
+import ContactPage from './pages/web/ContactPage';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Routes>
+          {/* Web */}
+          <Route path=''>
+            {/* connexion */}
+            <Route path='' index element={<LandingPage />} />
+            <Route path={`${routing.aboutus}`} element={<AboutPage />} />
+            <Route path={`${routing.services}`}  element={<ServicePage />} />
+            <Route path={`${routing.blog}`}  element={<BlogPage />} />
+            <Route path={`${routing.blog}/:id`}  element={<SingleBlog />} />
+            <Route path={`${routing.contact}`}  element={<ContactPage />} />
+          </Route>
+          {/* admin */}
+          <Route></Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

@@ -1,0 +1,56 @@
+import React, { useEffect, useState } from 'react'
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import { LoadAllTemoin } from '../../../actions/TemoinAction';
+import { responsiveTemoignage } from '../../../configurations/Carousel/CarouselConf';
+
+const Temoignage = () => {
+    const  [temoinlist , settemoinlist] =useState([]);
+    useEffect(()=>{
+        LoadAllTemoin(settemoinlist);
+    },[]);
+    return (
+        <section id="testimonials" class="testimonial_area row">
+            <div class="container ">
+                <div class="py-3 px-2">
+                    <div class="title-left wow fadeInUp">
+                        <h1 class="text-left" style={{ textAlign: "center" }}>Les temoignage de nos clients </h1  >
+                    </div>
+                    <div class="title-left wow fadeInUp" style={{paddingBottom:"100px"}} >
+                        <p  class="text-center" style={{ textAlign: "center", color:"GrayText", fontSize:"30px" }}> nos nos client peut temoignés </p>
+                    </div>
+                </div>
+                <div class="title wow fadeInUp">
+                </div>
+                <Carousel class="testimonial_carosel flex " style={{ display: "flex" }} infinite responsive={responsiveTemoignage} >
+                    
+                    {
+                        temoinlist.map((item)=>{
+                            return(
+                                <div class="item">
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" src={item.coverPicture} style={{height:"250px", width:"250px" , borderRadius:"10%"}} alt="" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="media-body text-center" style={{paddingTop:"10px", paddingBottom:"10px"}}>
+                            <h4 class="body-slider media-heading " style={{textAlign:"left"}}>{item.name}</h4>
+                        </div>
+                        <p style={{display:"flex" , flexDirection:'row' ,flexWrap:'wrap'}}>{item.description} </p>
+                        
+                    </div>
+                            )
+                        })
+                    }
+                </Carousel>
+
+            </div>
+
+        </section>
+
+    )
+}
+
+export default Temoignage;
