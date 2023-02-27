@@ -4,6 +4,8 @@ import { baseUrl } from "../configurations/Local/LocalValue";
 
 
 export const LoadBlogId = async (id,name,description,coverPicture,content, datesave) => {
+
+    
     await axios.get(`${baseUrl.urlapi}/api/v1/blog/${id}`, {
         headers: {
             'Content-Type': 'application/json',

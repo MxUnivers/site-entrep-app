@@ -26,6 +26,9 @@ const NavIntem = () => {
                                 <a href={`/${routing.aboutus}`} class="">A propos de nous </a>
                             </li>
                             <li class="dropdown submenu">
+                                <a href={`/${routing.solutions}`} class="">Solutions </a>
+                            </li>
+                            <li class="dropdown submenu">
                                 <a href={`/${routing.services}`} class=""> Services</a>
                             </li>
                             <li class="dropdown submenu">

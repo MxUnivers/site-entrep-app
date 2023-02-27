@@ -6,6 +6,12 @@ export var LocaValue = {
     nameblog:"nameblog",
     descriptionblog:"descriptionblog",
     contentblog:"contentblog",
+
+
+    idsolution:"idsolution",
+    namesolution:"namesolution",
+    descriptionsolution:"descriptionsolution",
+    contentsolution:"contentsolution",
     
 }
 
@@ -13,6 +19,7 @@ export var LocaValue = {
 export var routing = {
     // web
     aboutus :"a-propos-de-nous",
+    solutions :"nos-solutions",
     contact :"contact", 
     blog:"blog",
     services:"services",
@@ -22,7 +29,7 @@ export var routing = {
 
 
 export const baseUrl =  {
-    // urlapi:"http://localhost:5000",
-    urlapi:"https://good-cyan-cheetah-shoe.cyclic.app/"
+    urlapi:"http://localhost:5000",
+    // urlapi:"https://good-cyan-cheetah-shoe.cyclic.app/"
 }
 
