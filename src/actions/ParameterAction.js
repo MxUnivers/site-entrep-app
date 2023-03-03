@@ -140,3 +140,13 @@ export const LoadAllParameterImageEntreprise = async (coverPicture) => {
         coverPicture(response.data.data[0].contact.activite1.coverPicture);
     }).catch(function (error) { console.log(error); });
 }
+
+
+// nom de l'entreprise
+export const LoadAllParameterImageLogo = async (logo,name) => {
+    await axios.get(`${baseUrl.urlapi}/api/v1/parameter/get/all`, { headers: { 'Content-Type': 'application/json' } }).then(function (response) {
+        console.log(JSON.stringify(response.data.data[0]));
+        logo(response.data.data[0].contact.activite1.logo);
+        name(response.data.data[0].contact.activite1.name);
+    }).catch(function (error) { console.log(error); });
+}

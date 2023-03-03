@@ -4,6 +4,7 @@ import "react-multi-carousel/lib/styles.css";
 import NavIntem from '../NavIntem'
 import { responsivePatner } from '../../../configurations/Carousel/CarouselConf';
 import { LoadAllParameterImageEntreprise } from '../../../actions/ParameterAction';
+import { routing } from '../../../configurations/Local/LocalValue';
 
 const Navbar = () => {
     const [bg, setbg] =  useState();
@@ -15,7 +16,7 @@ const Navbar = () => {
 
         <div class="bg-grediunt">
             <div class="bg-banner-img clip-ellipse" style={{backgroundImage:`url('${bg}')`}}>
-                <div class="ovrllay">
+                <div class="ovrllay" >
                     {/* Navitem */}
                     <NavIntem />
                     {/* NavItem */}
@@ -23,10 +24,10 @@ const Navbar = () => {
                         <div class="container ">
                             <div class="row">
                                 <div id="banner-text" class="col-md-12 text-c text-center ">
-                                    <h5 class="wow fadeInUp main-h" data-wow-delay="0.2s" >End-to-End Customer Journey Analytics</h5>
-                                    <p class="banner-text wow fadeInUp main-h3" data-wow-delay="0.8s">No hours sank into aggregating and cleaning data. No complex SQL queries required. Just the answers <br /> teams need to make smarter decisions, fast. Now, thats data-driven.</p>
+                                    <h5 class="wow fadeInUp main-h" data-wow-delay="0.2s" >E-Digitale  est une socité digitale dans les solutions technologie </h5>
+                                    <p class="banner-text wow fadeInUp main-h3" data-wow-delay="0.8s">Conseille pour developper votre solutions </p>
                                     <div class="top-banner wow fadeInRight">
-                                        <a id="#services" href="contact.html" class="btn btn-default  wow fadeInUp  js-scroll-trigger" data-wow-delay="1s" href="#">GeT STARTED FOR FREE</a>
+                                        <a id="#services" href={`/${routing.contact}`} class="btn btn-default  wow fadeInUp  js-scroll-trigger" data-wow-delay="1s" >Demander une solution</a>
                                     </div>
                                 </div>
                             </div>

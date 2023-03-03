@@ -29,7 +29,7 @@ export var routing = {
 
 
 export const baseUrl =  {
-    urlapi:"http://localhost:5000",
-    // urlapi:"https://good-cyan-cheetah-shoe.cyclic.app/"
+    // urlapi:"http://localhost:5000",
+    urlapi:"https://good-cyan-cheetah-shoe.cyclic.app/"
 }
 

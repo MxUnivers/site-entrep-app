@@ -19,8 +19,8 @@ const ContactNav = () => {
                         <div class="container ">
                             <div class="row">
                                 <div id="banner-text" class="col-md-12 text-c text-center ">
-                                    <h5 class="wow fadeInUp main-h" data-wow-delay="0.2s" >Nous contacter </h5>
-                                    <p class="banner-text wow fadeInUp main-h3" data-wow-delay="0.8s">No hours sank into aggregating and cleaning data. No complex SQL queries required. Just the answers <br /> teams need to make smarter decisions, fast. Now, thats data-driven.</p>
+                                    <h5 class="wow fadeInUp main-h" data-wow-delay="0.2s" >Nous contacter pour mettre en place votre solutions </h5>
+                                    <p class="banner-text wow fadeInUp main-h3" data-wow-delay="0.8s">Envoyer nous les informations <br /> pour votre solutions</p>
                                 </div>
                             </div>
                         </div>

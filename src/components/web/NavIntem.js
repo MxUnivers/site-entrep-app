@@ -1,7 +1,14 @@
-import React from 'react'
-import { routing } from '../../configurations/Local/LocalValue'
+import React, { useEffect, useState } from 'react'
+import { LoadAllParameterImageLogo } from '../../actions/ParameterAction';
+import { routing } from '../../configurations/Local/LocalValue';
 
 const NavIntem = () => {
+    const [logo, setlogo] = useState("");
+    const [name, setname] = useState("");
+    useEffect(() => {
+        LoadAllParameterImageLogo(setlogo,setname);
+    }, [])
+    
     return (
         <nav class="navbar navbar-default header_aera affix-top">
             <div class="container m-s">
@@ -13,7 +20,7 @@ const NavIntem = () => {
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand logo-biss" href="index.html"> SOLUTIONS</a>
+                        <a class="navbar-brand logo-biss " style={{display:"flex" , alignItems:"center"}}   href=""> <img src={`${logo}`} style={{height:"50px", width:"50px"}} /> {name}</a>
                     </div>
                 </div>
                 <div class="col-md-8 p0">

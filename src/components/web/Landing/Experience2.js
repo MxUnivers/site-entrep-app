@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { LoadAllParameterAccueil } from '../../../actions/ParameterAction';
+import { routing } from '../../../configurations/Local/LocalValue';
 
 const Experience2 = () => {
     const [id, setid] = useState();
@@ -24,16 +25,16 @@ const Experience2 = () => {
        
    }, [])
     return (
-        <div class="container-fluid ">
+        <div class="container-fluid bg-primary ">
             <div class="row text-left about_row mr-0 wow fadeInUp">
                 <div class="col-md-6 pl-40 wow fadeInUp">
                     <div class="title-left wow fadeInUp">
-                        <h1 class="text-left">{titleAccueil2}</h1  >
+                        <h1 class="text-left color-white">{titleAccueil2}</h1  >
                     </div>
                     <p class="about_h">{smalltitleAccueil2}</p>
                     <p class="about_bottom_h">{descriptionAccueil2}</p>
                     <div class="top-banner wow fadeInRight text-left" style={{visibility: "visible", animationName: "fadeInRight"}}>
-                        <a id="#services" href="#services" class="btn btn-default  wow fadeInUp  js-scroll-trigger" data-wow-delay="1s" style={{visibility: "visible", animationDelay: "1s", animationName: "fadeInUp"}}>Learn more</a>
+                        <a id="#services" href={`/${routing.contact}`} class="btn btn-default  wow fadeInUp  js-scroll-trigger" data-wow-delay="1s" style={{visibility: "visible", animationDelay: "1s", animationName: "fadeInUp"}}>Demander une solution</a>
                     </div>
                 </div>
                 <div class="col-md-6 pr-0 clip-right" style={{backgroundImage:`url('${coverPictureAccueil2}')`,  backgroundSize:"cover"}}>

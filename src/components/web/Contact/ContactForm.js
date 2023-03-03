@@ -19,7 +19,7 @@ const ContactForm = () => {
 
     //  
     useEffect(() => {
-        LoadAllParameterAddress(settelephone1, settelephone2, setemail, setlocalisation, seturllocal);
+        LoadAllParameterAddress(settelephone1, settelephone2, setemailContact, setlocalisation, seturllocal);
     }, []);
 
     return (
@@ -39,16 +39,16 @@ const ContactForm = () => {
                             >
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <input value={name} onChange={(e) => { setname(e.target.value) }} type="text" class="medium-input" maxlength="50" placeholder="Name *" required="required" id="name" name="nom complet " />
+                                        <input value={name} onChange={(e) => { setname(e.target.value) }} type="text" class="medium-input" maxlength="50" placeholder="Nom *" required="required" id="name" name="nom complet " />
                                     </div>
                                     <div class="col-xs-12 col-sm-6 col-md-6">
-                                        <input value={email} onChange={(e) => { setemail(e.target.value) }} type="email" class="medium-input" maxlength="70" placeholder="E-mail *" required="required" id="email" name="email" />
+                                        <input value={email} onChange={(e) => { setemail(e.target.value) }} type="email" class="medium-input" maxlength="70" placeholder="E-Mail *" required="required" id="email" name="email" />
                                     </div>
                                     <div class="col-xs-12 col-sm-6 col-md-6">
-                                        <input value={subject} onChange={(e) => { setsubject(e.target.value) }} type="text" class="medium-input" maxlength="70" placeholder="Subject *" required="required" id="subject" name="subject" />
+                                        <input value={subject} onChange={(e) => { setsubject(e.target.value) }} type="text" class="medium-input" maxlength="70" placeholder="Sujet *" required="required" id="subject" name="subject" />
                                     </div>
                                     <div class="col-md-12">
-                                        <textarea value={content} onChange={(e) => { setcontent(e.target.value) }} class="medium-textarea" rows="12" maxlength="1000" placeholder="Message *" required="required" id="message" name="message"></textarea>
+                                        <textarea value={content} onChange={(e) => { setcontent(e.target.value) }} class="medium-textarea" rows="12" maxlength="1000" placeholder="Plus de détails sur votre solution *" required="required" id="message" name="message"></textarea>
                                     </div>
                                     <div class="col-md-12 sm-margin-30px-bottom">
                                         <div class="top-contact wow fadeInRight text-left" style={{ visibility: "visible", animationName: "fadeInRight" }}>
@@ -79,7 +79,7 @@ const ContactForm = () => {
                                                 <p><i class="fa fa-phone text-center"></i> <strong>{telephone2}</strong> Regina ST, London, SK 8GH.</p>
                                             </li>
                                             <li>
-                                                <p><i class="fa fa-envelope text-center"></i> <strong>Email : {emailContact} </strong> <a href="javascript:void(0)" class="email_color_site">email@youradress.com</a></p>
+                                                <p><i class="fa fa-envelope text-center"></i>  <a href={`mailto:${emailContact}`} class="email_color_site"><strong>Email : {emailContact} </strong></a></p>
                                             </li>
                                         </ul>
                                     </div>
