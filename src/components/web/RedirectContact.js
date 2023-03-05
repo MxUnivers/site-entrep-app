@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { routing } from '../../configurations/Local/LocalValue'
 
 const RedirectContact = () => {
@@ -17,7 +18,7 @@ const RedirectContact = () => {
                             </div>
                             <div class="col-md-5">
                                 <div class="top-banner wow fadeInRight text-left" style={{ visibility: "visible", animationName: "fadeInRight" }} >
-                                    <a id="#services" href={`/${routing.contact}`} class="btn btn-warning  wow fadeInUp  js-scroll-trigger" data-wow-delay="1s" style={{ visibility: "visible", animationDelay: "1s", animationName: "fadeInUp" }} >CONTACTER NOUS </a>
+                                    <Link id="#services" to={`/${routing.contact}`} class="btn btn-warning  wow fadeInUp  js-scroll-trigger" data-wow-delay="1s" style={{ visibility: "visible", animationDelay: "1s", animationName: "fadeInUp" }} >CONTACTER NOUS </Link>
                                 </div>
                             </div>
                         </div>

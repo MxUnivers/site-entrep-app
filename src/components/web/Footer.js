@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 import { LoadAllParameterFooter } from '../../actions/ParameterAction';
 import { routing } from '../../configurations/Local/LocalValue';
 
@@ -24,13 +25,13 @@ const Footer = () => {
                     <div class="row book_now">
                         <div class="col-md-4">
                             <div class="">
-                                <a class=" logo-biss" href="index.html"> <img src={logo} /></a>
+                                <Link class=" logo-biss" to="#"> <img src={logo} /></Link>
                             </div>
                             <p class="footer-h">Des solutions pour le présent et l{"'"}avenir ... Qui sommes nous ? Qui sommes nous ? B2I est un cabinet conseil ...</p>
                             <div class="bigpixi-footer-social">
-                                <a href={`${facebook}`} target="_blank"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
-                                <a href={`${youtube}`} target="_blank"><i id="social-tw" class="fa fa-youtube-square fa-3x social"></i></a>
-                                <a href={`${instagram}`} target="_blank"><i id="social-em" class="fa fa-instagram fa-3x social"></i></a>
+                                <Link to={`${facebook}`} target="_blank"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></Link>
+                                <Link to={`${youtube}`} target="_blank"><i id="social-tw" class="fa fa-youtube-square fa-3x social"></i></Link>
+                                <Link to={`${instagram}`} target="_blank"><i id="social-em" class="fa fa-instagram fa-3x social"></i></Link>
                             </div>
                         </div>
                         <div class="col-md-1 ">
@@ -38,11 +39,11 @@ const Footer = () => {
                         <div class="col-md-3">
                             <h2 class="footer-top">SOLUTIONS </h2>
                             <ul class="footer-menu">
-                                <li><a href={`/`}> Accueil    </a></li>
-                                <li><a href={`/${routing.aboutus}`}> Apropos de nous ?  </a> </li>
-                                <li><a href={`/${routing.services}`}>nos service    </a> </li>
-                                <li><a href={`/${routing.blog}`}> activtés </a> </li>
-                                <li><a href={`/${routing.contact}`}> contact </a> </li>
+                                <li><Link to={`/`}> Accueil    </Link></li>
+                                <li><Link to={`/${routing.aboutus}`}> Apropos de nous ?  </Link> </li>
+                                <li><Link to={`/${routing.services}`}>nos service    </Link> </li>
+                                <li><Link to={`/${routing.blog}`}> activtés </Link> </li>
+                                <li><Link to={`/${routing.contact}`}> contact </Link> </li>
                             </ul>
                         </div>
                         <div class="col-md-4">
@@ -52,7 +53,7 @@ const Footer = () => {
                                     <br/>{telephone2}
                                 </li>
                                 <li class="footer-left-h"><i class="fa fa-envelope-o"></i>Email<br/>
-                                    <a href=""> {email}</a><br/>
+                                    <Link to=""> {email}</Link><br/>
                                 </li>
                                 
                             </ul>

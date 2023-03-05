@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 import { LoadAllParameterAccueil } from '../../../actions/ParameterAction';
 import { LoadAllService } from '../../../actions/ServiceAction';
 import { routing } from '../../../configurations/Local/LocalValue';
@@ -56,7 +57,7 @@ const Experience1 = () => {
                      <h2 class="unify"> {item.name} </h2>
                      <p class="bottom-s">It is a long established fact that a btn btn-defaulter will be distracted by the btn btn-defaultable content of a page when looking at its layout. </p>
                      <div class="button-div">
-                        <a href={`/${routing.contact}`} class="button-s"> Demander un expertise  </a>
+                        <Link to={`/${routing.contact}`} class="button-s"> Demander un expertise  </Link>
                      </div>
                   </div>
                </div>
@@ -73,7 +74,7 @@ const Experience1 = () => {
                <div class="col-md-6 p-0 clip-polygon  " style={{backgroundImage:`url('${coverPictureAccueil}')`,backgroundSize:"cover"}}>
                   
                   <div class="video-img" >
-                     <a href="#nog" class="hero__play"><img  src={"assets/images/img-g.png"}/></a>
+                     <Link to="#nog" class="hero__play"><img  src={"assets/images/img-g.png"}/></Link>
                   </div>
                </div>
                <div class="col-md-6 wow fadeInUp">
@@ -83,7 +84,7 @@ const Experience1 = () => {
                   <p class="about_h wow fadeInUp " data-wow-delay="1s" style={{visibility: "visible", animationName: "fadeInRight"}}>Bénéficier de conseille.</p>
                   <p class="about_bottom_h wow fadeInUp " data-wow-delay="1s" style={{visibility: "visible", animationDelay: "1s", animationName: "fadeInUp",color:"white"}}>{desciptionAccueil}</p>
                   <div class="top-banner wow fadeInRight text-left" style={{visibility: "visible", animationName: "fadeInRight"}}>
-                     <a id="#services" href={`/${routing.contact}`} class="btn btn-warning  wow fadeInUp  js-scroll-trigger" data-wow-delay="1s" style={{visibility: "visible", animationDelay: "1s", animationName: "fadeInUp"}}>Demander un solution</a>
+                     <Link id="#services" to={`/${routing.contact}`} class="btn btn-warning  wow fadeInUp  js-scroll-trigger" data-wow-delay="1s" style={{visibility: "visible", animationDelay: "1s", animationName: "fadeInUp"}}>Demander un solution</Link>
                   </div>
                </div>
             </div>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { Link } from 'react-router-dom';
 import { LoadAllTemoin } from '../../../actions/TemoinAction';
 import { responsiveTemoignage } from '../../../configurations/Carousel/CarouselConf';
 
@@ -30,9 +31,9 @@ const Temoignage = () => {
                                 <div class="item bg-primary" style={{borderRadius:"20%", margin:"10px"}}>
                         <div class="media">
                             <div class="media-left">
-                                <a href="#">
+                                <Link to="#">
                                     <img class="media-object" src={item.coverPicture} style={{height:"250px", width:"250px" , borderRadius:"10%"}} alt="" />
-                                </a>
+                                </Link>
                             </div>
                         </div>
                         <div class="media-body text-center" style={{paddingTop:"10px", paddingRight:"10px", paddingBottom:"10px"}}>
