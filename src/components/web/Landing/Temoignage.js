@@ -10,8 +10,8 @@ const Temoignage = () => {
         LoadAllTemoin(settemoinlist);
     },[]);
     return (
-        <section id="testimonials" class="testimonial_area row">
-            <div class="container ">
+        <section id="testimonials" class="testimonial_area row ">
+            <div class="container bg-light ">
                 <div class="py-3 px-2">
                     <div class="title-left wow fadeInUp">
                         <h1 class="text-left" style={{ textAlign: "center" }}>Les temoignage de nos clients </h1  >
@@ -27,7 +27,7 @@ const Temoignage = () => {
                     {
                         temoinlist.map((item)=>{
                             return(
-                                <div class="item">
+                                <div class="item bg-primary" style={{borderRadius:"20%", margin:"10px"}}>
                         <div class="media">
                             <div class="media-left">
                                 <a href="#">
@@ -35,10 +35,13 @@ const Temoignage = () => {
                                 </a>
                             </div>
                         </div>
-                        <div class="media-body text-center" style={{paddingTop:"10px", paddingBottom:"10px"}}>
-                            <h4 class="body-slider media-heading " style={{textAlign:"left"}}>{item.name}</h4>
+                        <div class="media-body text-center" style={{paddingTop:"10px", paddingRight:"10px", paddingBottom:"10px"}}>
+                            <h4 class="body-slider media-heading " style={{textAlign:"left", color:"white"}}>{item.name}</h4>
                         </div>
-                        <p style={{display:"flex" , flexDirection:'row' ,flexWrap:'wrap'}}>{item.description} </p>
+                        <div class="p-3 rounded-lg bg-light " style={{margin:"5px", padding:"5px",paddingBottom:"10px", borderRadius:"10px"}}>
+                        <p style={{display:"flex" , flexDirection:'row' ,flexWrap:'wrap', color:"whitesmoke"}}>{item.description} </p>
+
+                        </div>
                         
                     </div>
                             )

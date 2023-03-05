@@ -29,12 +29,12 @@ const Experience2 = () => {
             <div class="row text-left about_row mr-0 wow fadeInUp">
                 <div class="col-md-6 pl-40 wow fadeInUp">
                     <div class="title-left wow fadeInUp">
-                        <h1 class="text-left color-white">{titleAccueil2}</h1  >
+                        <h1 class="text-left color-white" style={{color:"white"}}>{titleAccueil2}</h1  >
                     </div>
                     <p class="about_h">{smalltitleAccueil2}</p>
-                    <p class="about_bottom_h">{descriptionAccueil2}</p>
+                    <p class="about_bottom_h " style={{color:"white"}}>{descriptionAccueil2}</p>
                     <div class="top-banner wow fadeInRight text-left" style={{visibility: "visible", animationName: "fadeInRight"}}>
-                        <a id="#services" href={`/${routing.contact}`} class="btn btn-default  wow fadeInUp  js-scroll-trigger" data-wow-delay="1s" style={{visibility: "visible", animationDelay: "1s", animationName: "fadeInUp"}}>Demander une solution</a>
+                        <a id="#services" href={`/${routing.contact}`} class="btn btn-warning  wow fadeInUp  js-scroll-trigger" data-wow-delay="1s" style={{visibility: "visible", animationDelay: "1s", animationName: "fadeInUp"}}>Demander une solution</a>
                     </div>
                 </div>
                 <div class="col-md-6 pr-0 clip-right" style={{backgroundImage:`url('${coverPictureAccueil2}')`,  backgroundSize:"cover"}}>

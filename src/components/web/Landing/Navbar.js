@@ -5,6 +5,7 @@ import NavIntem from '../NavIntem'
 import { responsivePatner } from '../../../configurations/Carousel/CarouselConf';
 import { LoadAllParameterImageEntreprise } from '../../../actions/ParameterAction';
 import { routing } from '../../../configurations/Local/LocalValue';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [bg, setbg] =  useState();
@@ -27,7 +28,7 @@ const Navbar = () => {
                                     <h5 class="wow fadeInUp main-h" data-wow-delay="0.2s" >E-Digitale  est une socité digitale dans les solutions technologie </h5>
                                     <p class="banner-text wow fadeInUp main-h3" data-wow-delay="0.8s">Conseille pour developper votre solutions </p>
                                     <div class="top-banner wow fadeInRight">
-                                        <a id="#services" href={`/${routing.contact}`} class="btn btn-default  wow fadeInUp  js-scroll-trigger" data-wow-delay="1s" >Demander une solution</a>
+                                        <Link id="#services" to={`/${routing.contact}`} class="btn btn-warning  wow fadeInUp  js-scroll-trigger" data-wow-delay="1s" >Demander une solution</Link>
                                     </div>
                                 </div>
                             </div>

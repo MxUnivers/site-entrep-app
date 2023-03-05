@@ -17,7 +17,7 @@ const RedirectContact = () => {
                             </div>
                             <div class="col-md-5">
                                 <div class="top-banner wow fadeInRight text-left" style={{ visibility: "visible", animationName: "fadeInRight" }} >
-                                    <a id="#services" href={`/${routing.contact}`} class="btn btn-primary  wow fadeInUp  js-scroll-trigger" data-wow-delay="1s" style={{ visibility: "visible", animationDelay: "1s", animationName: "fadeInUp" }} >CONTACTER NOUS </a>
+                                    <a id="#services" href={`/${routing.contact}`} class="btn btn-warning  wow fadeInUp  js-scroll-trigger" data-wow-delay="1s" style={{ visibility: "visible", animationDelay: "1s", animationName: "fadeInUp" }} >CONTACTER NOUS </a>
                                 </div>
                             </div>
                         </div>

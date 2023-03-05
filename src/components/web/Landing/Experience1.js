@@ -48,8 +48,8 @@ const Experience1 = () => {
                   (
                      ServiceList.map((item)=>{
                         return(
-                           <div class="who_we_area col-md-4 col-sm-6 col-4pad wow fadeInUp">
-                  <div class="service-1">
+                           <div class="who_we_area col-md-4 col-sm-6 col-4pad wow fadeInUp " style={{margin:"0px"}} >
+                  <div class="service-1 bg-warning">
                      <div class="servise-top wow fadeInUp">
                         <img src={item.coverPicture}/>
                      </div>
@@ -68,7 +68,7 @@ const Experience1 = () => {
             </div>
          </div>
          <section class="">
-         <div class="container-fluid ">
+         <div class="container-fluid bg-primary">
             <div class="row text-left about_row   ">
                <div class="col-md-6 p-0 clip-polygon  " style={{backgroundImage:`url('${coverPictureAccueil}')`,backgroundSize:"cover"}}>
                   
@@ -78,12 +78,12 @@ const Experience1 = () => {
                </div>
                <div class="col-md-6 wow fadeInUp">
                   <div class="title-left wow fadeInUp">
-                     <h1 class="text-left wow fadeInUp " data-wow-delay="1s" style={{visibility: "visible", animationDelay: "1s", animationName: "fadeInUp"}}>{titleAccueil}</h1  >
+                     <h1 class="text-left wow fadeInUp " data-wow-delay="1s" style={{visibility: "visible", animationDelay: "1s", animationName: "fadeInUp", color:"white"}}>{titleAccueil}</h1  >
                   </div>
-                  <p class="about_h wow fadeInUp " data-wow-delay="1s" style={{visibility: "visible", animationName: "fadeInRight"}}>Conseille Finacier.</p>
-                  <p class="about_bottom_h wow fadeInUp " data-wow-delay="1s" style={{visibility: "visible", animationDelay: "1s", animationName: "fadeInUp"}}>{desciptionAccueil}</p>
+                  <p class="about_h wow fadeInUp " data-wow-delay="1s" style={{visibility: "visible", animationName: "fadeInRight"}}>Bénéficier de conseille.</p>
+                  <p class="about_bottom_h wow fadeInUp " data-wow-delay="1s" style={{visibility: "visible", animationDelay: "1s", animationName: "fadeInUp",color:"white"}}>{desciptionAccueil}</p>
                   <div class="top-banner wow fadeInRight text-left" style={{visibility: "visible", animationName: "fadeInRight"}}>
-                     <a id="#services" href={`/${routing.contact}`} class="btn btn-default  wow fadeInUp  js-scroll-trigger" data-wow-delay="1s" style={{visibility: "visible", animationDelay: "1s", animationName: "fadeInUp"}}>Demander un solution</a>
+                     <a id="#services" href={`/${routing.contact}`} class="btn btn-warning  wow fadeInUp  js-scroll-trigger" data-wow-delay="1s" style={{visibility: "visible", animationDelay: "1s", animationName: "fadeInUp"}}>Demander un solution</a>
                   </div>
                </div>
             </div>

@@ -18,8 +18,8 @@ const Footer = () => {
         LoadAllParameterFooter(setlogo,settelphone1,settelphone2,setemail,setfacebook,setyoutube,setinstagram);
     },[]);
     return (
-        <div class="our_footer_area visible">
-            <div class="book_now_aera ">
+        <div class="our_footer_area visible bg-primary">
+            <div class="book_now_aera bg-dark">
                 <div class="container wow fadeInUp">
                     <div class="row book_now">
                         <div class="col-md-4">

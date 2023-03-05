@@ -14,15 +14,15 @@ const AboutIntro = () => {
     const [descriptionAbout2, setdescriptionAbout2] = useState();
 
 
-    useEffect(()=>{
+    useEffect(() => {
         LoadAllParameterAbout(
             // About 
-            setvideoAbout ,setcoverPictureAbout, setdesciptionAbout,settitleAbout, setstrategyAbout,setcontentAbout, 
-            setcoverPictureAbout2,setdescriptionAbout2,settitleAbout2,
+            setvideoAbout, setcoverPictureAbout, setdesciptionAbout, settitleAbout, setstrategyAbout, setcontentAbout,
+            setcoverPictureAbout2, setdescriptionAbout2, settitleAbout2,
         )
-    },[]);
+    }, []);
 
-    
+
     return (
         <div class=" py-70 bg-about-img">
             <div class="container">
@@ -36,11 +36,13 @@ const AboutIntro = () => {
                          */}
                         </div>
                         <h2 class="about-s wow fadeInUp">en savoir plus sur notre activité </h2>
-                        <p class="about-bottom-s wow fadeInUp">  {contentAbout}</p>
+                        <div>
+                            <p class="about-bottom-s wow fadeInUp bg-success " style={{borderRadius:"10px" , padding:"10px"}}>  {contentAbout}</p>
+                        </div>
                     </div>
 
 
-                    <div class="col-md-5  back-shap">
+                    <div class="col-md-5  back-shap bg-primary">
                         <div class="all-text">
                             <h2 class="shap_top"> Stratégie </h2>
                             <p class="shap_bottom wow fadeInUp">{strategyAbout}</p>
