@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
 import { LoadAllParameterImageLogo } from '../../actions/ParameterAction';
 import { routing } from '../../configurations/Local/LocalValue';
 
@@ -11,42 +10,42 @@ const NavIntem = () => {
     }, [])
     
     return (
-        <nav class="navbar navbar-default header_aera affix-top">
-            <div class="container m-s">
+        <nav class="navbar navbar-default header_aera affix-top  visible">
+            <div class="container m-s visible">
                 <div class="col-md-4 p0">
-                    <div class="navbar-header">
+                    <div class="navbar-header ">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#min_navbar">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <Link class="navbar-brand logo-biss " style={{display:"flex" , alignItems:"center"}}   to=""> <img src={`${logo}`} style={{height:"50px", width:"50px"}} /> {name}</Link>
+                        <a class="navbar-brand logo-biss " style={{display:"flex" , alignItems:"center"}}   href=""> <img src={`${logo}`} style={{height:"50px", width:"50px"}} /> {name}</a>
                     </div>
                 </div>
-                <div class="col-md-8 p0">
+                <div class="col-md-8 p0 visible">
                     <div class="collapse navbar-collapse" id="min_navbar">
-                        <ul class="nav navbar-nav navbar-right">
+                        <ul class=" nav navbar-nav navbar-right visible">
                             <li class="dropdown submenu">
-                                <Link to="/" class="">Accueil</Link>
+                                <a href="/" class="">Accueil</a>
                             </li>
                             <li class="dropdown submenu">
-                                <Link to={`/${routing.aboutus}`} class="">A propos de nous </Link>
+                                <a href={`/${routing.aboutus}`} class="">A propos de nous </a>
                             </li>
                             <li class="dropdown submenu">
-                                <Link to={`/${routing.solutions}`} class="">Solutions </Link>
+                                <a href={`/${routing.solutions}`} class="">Solutions </a>
                             </li>
                             <li class="dropdown submenu">
-                                <Link to={`/${routing.services}`} class=""> Services</Link>
+                                <a href={`/${routing.services}`} class=""> Services</a>
                             </li>
                             <li class="dropdown submenu">
-                                <Link to={`/${routing.blog}`} class="">Blog</Link>
+                                <a href={`/${routing.blog}`} class="">Blog</a>
                             </li>
                            {/* <li class="dropdown submenu">
-                                <Link to="elements.html" class="">Elements</Link>
+                                <a href="elements.html" class="">Elements</a>
                             </li>*/}
                             <li class="dropdown submenu">
-                                <Link to={`/${routing.contact}`} class="">Contact</Link>
+                                <a href={`/${routing.contact}`} class="">Contact</a>
                             </li>
 
                         </ul>

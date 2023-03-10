@@ -48,7 +48,7 @@ const AboutArea1 = () => {
                             <img src={`${coverPictureAbout}`} class="posi-r-img" />
                         </div>
                         <div class="" >
-                            <a href="#nogo" class="hero__play"> <img src="assets/images/img-2.png" class="video-a" /></a>
+                            <a href="#" class=""> <img src="assets/images/img-2.png" class="video-a" /></a>
                         </div>
                     </div>
                     <div class="col-md-6 wow fadeInUp">

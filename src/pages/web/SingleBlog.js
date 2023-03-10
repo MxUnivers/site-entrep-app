@@ -6,15 +6,15 @@ import SingleBlogNav from '../../components/web/SingleBlog/SingleBlogNav'
 import { LocaValue } from '../../configurations/Local/LocalValue'
 
 const SingleBlog = () => {
-    var  id = localStorage.getItem(LocaValue.idblog)
-    const [name,setname]=useState();
-    const [coverPicture,setcoverPicture]=useState();
-    const [description,setdescription]=useState();
-    const [content,setcontent]=useState();
-    const [datesave,setdatesave]=useState();
-    useEffect(()=>{
-        LoadBlogId(id,setname,setdescription, setcoverPicture,setcontent,setdatesave);
-    },[])
+    var id = localStorage.getItem(LocaValue.idblog)
+    const [name, setname] = useState();
+    const [coverPicture, setcoverPicture] = useState();
+    const [description, setdescription] = useState();
+    const [content, setcontent] = useState();
+    const [datesave, setdatesave] = useState();
+    useEffect(() => {
+        LoadBlogId(id, setname, setdescription, setcoverPicture, setcontent, setdatesave);
+    }, [])
     return (
         <div>
             <SingleBlogNav />
@@ -26,10 +26,10 @@ const SingleBlog = () => {
                         <div class="col-md-8 col-xs-12">
                             <div class="blog-details-wrap">
                                 <div class="blog-details-img visible" >
-                                    <img src={`${coverPicture}`} class="img-fluid" style={{height:"500px" ,width:"100%" }} alt="" />
+                                    <img src={`${coverPicture}`} class="img-fluid" style={{ height: "500px", width: "100%" }} alt="" />
                                 </div>
                                 <div class="blog-details-content wow fadeInUp">
-                                    <h3>{}name</h3>
+                                    <h3>{ }name</h3>
                                     <blockquote>
                                         {description}
                                     </blockquote>
@@ -41,7 +41,7 @@ const SingleBlog = () => {
                                         <li>consectetur adipisicing elit</li>
                                     </ul>
                                     {/*detail blog */}
-                                    <p   class="container-fluid" dangerouslySetInnerHTML={{ __html: content }}></p>
+                                    <p class="container-fluid" dangerouslySetInnerHTML={{ __html: content }}></p>
                                 </div>
                                 <div class="comment-main wow fadeInUp">
                                     <h3 class="blog-title ">Comment</h3>
@@ -163,7 +163,7 @@ const SingleBlog = () => {
                                     </ol>
                                 </div>
                                 <div id="respond" class="sewl-comment-form comment-respond wow fadeInUp">
-                                    <h3 id="reply-title" class="blog-title">Post Comments</h3>
+                                    <h3 id="reply-title" class="blog-title">Votre avis compte</h3>
                                     <form novalidate="" method="post" id="commentform" class="comment-form" action="#0">
                                         <div class="row">
                                             <div class="col-xs-12">
@@ -217,7 +217,8 @@ const SingleBlog = () => {
                                         <li><a href="#">Corporate</a></li>
                                     </ul>
                                 </div>
-                                <div class="related-post mb-30 wow fadeInUp">
+                                {
+                                    /*<div class="related-post mb-30 wow fadeInUp">
                                     <h3 class="sidebar-title">Related Postt</h3>
                                     <ul>
                                         <li class="related-post-items">
@@ -249,6 +250,8 @@ const SingleBlog = () => {
                                         </li>
                                     </ul>
                                 </div>
+                            */
+                                }
                                 <div class="archive-wrap mb-30 wow fadeInUp">
                                     <h3 class="sidebar-title">archive</h3>
                                     <ul>

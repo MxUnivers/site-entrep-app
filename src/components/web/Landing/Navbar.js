@@ -17,7 +17,7 @@ const Navbar = () => {
 
         <div class="bg-grediunt">
             <div class="bg-banner-img clip-ellipse" style={{backgroundImage:`url('${bg}')`}}>
-                <div class="ovrllay" >
+                <div class=" bg-gradient-to-br from-blue-900 to-transparent" >
                     {/* Navitem */}
                     <NavIntem />
                     {/* NavItem */}

@@ -29,8 +29,8 @@ const ServiceInfo = () => {
                                     <div class="servise-top wow fadeInUp">
                                        <img src={item.coverPicture} />
                                     </div>
-                                    <h2 class="unify"> {item.name} </h2>
-                                    <p class="bottom-s">{item.description} </p>
+                                    <h2 class="unify line-clamp-3"> {item.name} </h2>
+                                    <p class="bottom-s line-clamp-4">{item.description} </p>
                                     <div class="button-div">
                                        {/*
                                        <a href="" class="button-s"> Learn more   </a>

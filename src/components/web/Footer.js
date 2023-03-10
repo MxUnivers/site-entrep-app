@@ -61,6 +61,11 @@ const Footer = () => {
                         
                     </div>
                 </div>
+                <div class="container">
+                  <div>
+                    <p class="text-white">COPYRIGHT @ DESIGN BUY B2I </p>
+                  </div>
+                </div>
             </div>
         </div>
             )

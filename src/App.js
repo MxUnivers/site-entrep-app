@@ -1,5 +1,4 @@
 
-import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import LandingPage from './pages/web/LandingPage';
 import { routing } from './configurations/Local/LocalValue';

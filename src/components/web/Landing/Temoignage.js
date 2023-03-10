@@ -40,7 +40,7 @@ const Temoignage = () => {
                             <h4 class="body-slider media-heading " style={{textAlign:"left", color:"white"}}>{item.name}</h4>
                         </div>
                         <div class="p-3 rounded-lg bg-light " style={{margin:"5px", padding:"5px",paddingBottom:"10px", borderRadius:"10px"}}>
-                        <p style={{display:"flex" , flexDirection:'row' ,flexWrap:'wrap', color:"whitesmoke"}}>{item.description} </p>
+                        <p class="cline-clamp-4" style={{display:"flex" , flexDirection:'row' ,flexWrap:'wrap', color:"whitesmoke"}}>{item.description} </p>
 
                         </div>
                         

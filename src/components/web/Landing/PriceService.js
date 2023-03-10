@@ -31,8 +31,8 @@ const PriceService = () => {
                                         <li>Forum access</li>
                                         <li>Support at $25/hour</li>
                                     </ul>
-                                    <Link to="#" class="btn btn-default">
-                                        CHOOSE PLAN</Link>
+                                    <a href="#" class="btn btn-default">
+                                        CHOOSE PLAN</a>
                                 </div>
                             </div>
                         </div>
@@ -53,8 +53,8 @@ const PriceService = () => {
                                         <li>Forum access</li>
                                         <li>Support at $25/hour</li>
                                     </ul>
-                                    <Link to="#" class="btn btn-default">
-                                        CHOOSE PLAN</Link>
+                                    <a href="#" class="btn btn-default">
+                                        CHOOSE PLAN</a>
                                 </div>
                             </div>
                         </div>
@@ -75,8 +75,8 @@ const PriceService = () => {
                                         <li>Forum access</li>
                                         <li>Support at $25/hour</li>
                                     </ul>
-                                    <Link to="#" class="btn btn-default">
-                                        CHOOSE PLAN</Link>
+                                    <a href="#" class="btn btn-default">
+                                        CHOOSE PLAN</a>
                                 </div>
                             </div>
                         </div>
